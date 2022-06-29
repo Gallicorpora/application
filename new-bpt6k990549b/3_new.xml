@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+	xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+	<Description>
+		<MeasurementUnit>pixel</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>3.jpg</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCR_0">
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareName>kraken</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Tags>
+		<OtherTag ID="TYPE_1" LABEL="TitlePageZone"/>
+		<OtherTag ID="TYPE_2" LABEL="DropCapitalZone"/>
+		<OtherTag ID="TYPE_3" LABEL="NumberingZone"/>
+		<OtherTag ID="TYPE_4" LABEL="MusicZone"/>
+		<OtherTag ID="TYPE_5" LABEL="Title"/>
+		<OtherTag ID="TYPE_6" LABEL="StampZone"/>
+		<OtherTag ID="TYPE_7" LABEL="QuireMarksZone"/>
+		<OtherTag ID="TYPE_8" LABEL="DamageZone"/>
+		<OtherTag ID="TYPE_9" LABEL="TableZone"/>
+		<OtherTag ID="TYPE_10" LABEL="RunningTitleZone"/>
+		<OtherTag ID="TYPE_11" LABEL="MarginTextZone"/>
+		<OtherTag ID="TYPE_12" LABEL="GraphicZone"/>
+		<OtherTag ID="TYPE_13" LABEL="MainZone"/>
+		</Tags>
+	<Layout>
+		<Page WIDTH="960" HEIGHT="1723" PHYSICAL_IMG_NR="0" ID="page_0">
+			<PrintSpace HPOS="0" VPOS="0" WIDTH="960" HEIGHT="1723">
+																	<TextBlock ID="block_0"
+						   HPOS="258"
+						   VPOS="1527" 
+						   WIDTH="4" 
+						   HEIGHT="10"
+ 					            					            					            					            					            					            					            					            					           TAGREFS="TYPE_7" 					            					            					            					            					            					           >
+					<Shape>
+						<Polygon POINTS="262 1537 258 1537 258 1527 262 1527 262 1537"/>
+					</Shape>
+										</TextBlock>
+																					<TextBlock ID="block_1"
+						   HPOS="275"
+						   VPOS="1527" 
+						   WIDTH="33" 
+						   HEIGHT="10"
+ 					            					            					            					            					            					            					            					            					           TAGREFS="TYPE_7" 					            					            					            					            					            					           >
+					<Shape>
+						<Polygon POINTS="275 1527 308 1527 308 1532 275 1537 275 1527"/>
+					</Shape>
+										</TextBlock>
+																					<TextBlock ID="block_2"
+						   HPOS="275"
+						   VPOS="1556" 
+						   WIDTH="39" 
+						   HEIGHT="21"
+ 					            					            					            					            					            					            					            					            					           TAGREFS="TYPE_7" 					            					            					            					            					            					           >
+					<Shape>
+						<Polygon POINTS="281 1556 287 1567 314 1572 275 1577 281 1556"/>
+					</Shape>
+										</TextBlock>
+										</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

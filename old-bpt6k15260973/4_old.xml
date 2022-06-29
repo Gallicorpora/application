@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.loc.gov/standards/alto/ns-v4#"
+	xsi:schemaLocation="http://www.loc.gov/standards/alto/ns-v4# http://www.loc.gov/standards/alto/v4/alto-4-2.xsd">
+	<Description>
+		<MeasurementUnit>pixel</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>4.jpg</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCR_0">
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareName>kraken</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Tags>
+		<OtherTag ID="TYPE_1" LABEL="Default"/>
+		<OtherTag ID="TYPE_2" LABEL="DropCapital"/>
+		<OtherTag ID="TYPE_3" LABEL="Main"/>
+		<OtherTag ID="TYPE_4" LABEL="Stamp"/>
+		<OtherTag ID="TYPE_5" LABEL="Figure"/>
+		<OtherTag ID="TYPE_6" LABEL="text"/>
+		<OtherTag ID="TYPE_7" LABEL="Title"/>
+		<OtherTag ID="TYPE_8" LABEL="Signatures"/>
+		<OtherTag ID="TYPE_9" LABEL="Decoration"/>
+		<OtherTag ID="TYPE_10" LABEL="RunningTitle"/>
+		<OtherTag ID="TYPE_11" LABEL="Numbering"/>
+		<OtherTag ID="TYPE_12" LABEL="Margin"/>
+		<OtherTag ID="TYPE_13" LABEL="Damage"/>
+		</Tags>
+	<Layout>
+		<Page WIDTH="1651" HEIGHT="2658" PHYSICAL_IMG_NR="0" ID="page_0">
+			<PrintSpace HPOS="0" VPOS="0" WIDTH="1651" HEIGHT="2658">
+															<TextBlock ID="textblock_1">
+								<TextLine ID="line_0"
+	  HPOS="456"
+	  VPOS="1825" 
+	  WIDTH="20" 
+	  HEIGHT="75"	  BASELINE="456 1845 476 1845"
+	                                          TAGREFS="TYPE_1"                                                                                                                        >
+			<Shape>
+			<Polygon POINTS="456 1845 456 1898 474 1900 476 1845 476 1829 456 1825 456 1845"/>
+		</Shape>
+	        							<String ID="segment_0"
+			CONTENT="8" 
+			HPOS="456" 
+			VPOS="1825"
+			WIDTH="0" 
+			HEIGHT="73" 
+			WC="1.0">
+						<Shape>
+				<Polygon POINTS="456 1824 455 1824 455 1824 455 1824 455 1824 455 1824 455 1824 455 1824 455 1824 455 1824 455 1824 455 1824 455 1824 455 1824 455 1824 455 1824 455 1825 455 1898 455 1898 455 1898 455 1898 455 1898 455 1898 455 1898 455 1898 455 1898 455 1898 455 1898 455 1898 455 1898 455 1898 455 1898 455 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1898 456 1825 456 1824 456 1824 456 1824 456 1824 456 1824 456 1824 456 1824 456 1824 456 1824 456 1824 456 1824 456 1824 456 1824 456 1824 456 1824 456 1824"/>
+			</Shape>
+									<Glyph ID="char_0" 
+			       CONTENT="8"
+			       HPOS="456"
+			       VPOS="1825"
+			       WIDTH="0"
+			       HEIGHT="73"
+			       GC="1.0">
+						<Shape>
+				<Polygon POINTS="456 1825 456 1898 456 1898 456 1825"/>
+			</Shape>
+						</Glyph>
+					</String>
+				</TextLine>
+								</TextBlock>
+													</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

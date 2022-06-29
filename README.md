@@ -25,6 +25,25 @@ curl -o oldhtr.mlmodel --location --remote-header-name --remote-name https://git
 ```
 
 3. Download the [segmOntoCorpusSegmentation_fineTune_best](https://traces6.paris.inria.fr/media/models/7ea0421c/segmontocorpussegmentation_finetune_best.mlmodel) segmentation model and the [Gallicorpora+_best](https://traces6.paris.inria.fr/media/models/dee69a4c/gallicorpora_best.mlmodel) HTR model.
+```
+curl -o newseg.mlmodel --location --remote-header-name --remote-name https://traces6.paris.inria.fr/media/models/7ea0421c/segmontocorpussegmentation_finetune_best.mlmodel
+curl -o newhtr.mlmodel --location --remote-header-name --remote-name https://traces6.paris.inria.fr/media/models/dee69a4c/gallicorpora_best.mlmodel
+```
 
+4. Test a document on the old models.
+```
+cd images/bpt6k990549b
+kraken --alto --suffix ".xml" -I "*.jpg" -f image segment -i ../../oldseg.mlmodel -bl ocr -m ../../oldhtr.mlmodel
+cd -
+mkdir test-old
+mv images/bpt6k990549b/*.xml test-old/
+```
 
-4. 
+5. Test a document on the new models.
+```
+cd images/bpt6k990549b
+kraken --alto --suffix ".xml" -I "*.jpg" -f image segment -i ../../newseg.mlmodel -bl ocr -m ../../newhtr.mlmodel
+cd -
+mkdir test-new
+mv images/bpt6k990549b/*.xml test-new/
+```

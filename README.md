@@ -11,8 +11,12 @@ Pages from these three documents were processed twice with kraken (v. 3.0.13) us
 # Reproduce Problem
 To reproduce the problem described in [Issue #1](https://github.com/Gallicorpora/application/issues/1):
 
-1. Create a virtual environment, activate it, and install requirements.
+1. Download this repo, create a virtual environment, activate it, and install requirements.
 ```
+git clone git@github.com:Gallicorpora/application.git
+cd application
+git branch -f model-comparison origin/model-comparison
+git pull
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r transcribe_requirements.txt

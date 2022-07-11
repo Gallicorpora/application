@@ -12,17 +12,6 @@ bash process.sh -f arks.txt -l 10
 ## **What It Does**
 ___
 The Gallic(orpor)a Application downloads digital images of pages from a document on Gallica, transcribes them with Machine Learning models, and structures that transcribed data into a digital edition that conforms to the TEI (Text Encoding Initiative).
-### Step 1. Download Pages
-Every digital document on Gallica has a unique Archival Resource Key (ARK). The application reads a list of these keys, which the user provides (see `arks.txt`), and then downloads pages of those documents from the Bibliothèque nationale de France's servers.
-### Step 2. Transcribe Pages
-Researchers develop Machine Learning models that segment pages of text documents and predict the text on those pages. Researchers improve these models' efficacy by training them on limited data sets. For example, by training a text recognition model on French-language documents from the 17th century, that model will perform better on other French-language 17th-century documents than it will on Greek-language 4th-century documents. All segmentation and Handwritten Text Recognition (HTR) models are specialized in some way, depending on their training data.
-
-Through an automated process, this application applies segmentation and HTR models that best conform to the type of document being transcribed. It first assesses what would be the best type of segmentation and HTR models for a given document, based on that document's date of publication and language. The application then determines if anything it has installed matches those ideal models. To best take advantage of this application, the user should install it with segmentation and HTR models that are well suited to the type of documents whose Archival Resources Keys the user provides.
-
-These specialized models can be either public and downloaded from the internet via a URL (see `your_models.csv`), or models the user has available locally on their computer. During the installation process, the user specifies from where the application will install the models it will use. All models used by the application must conform to a strict file name syntax that allows the application to automatically determine which model to apply, depending on a document's language and date of publication.
-
-### Step 3. TEI Document
-Requiring no further input from the user, the application transforms the data which the segmentation and HTR models produced into a digital TEI edition. This digital edition can then be manipulated and published with such tools as TEI Publisher. 
 
 ## **How to Use It**
 ___
@@ -33,11 +22,12 @@ ___
 ### Download the Application
 1. Clone this repository.
 ```
-$ git clone https://github.com/kat-kel/gallicorpora-demo.git
+$ git clone https://github.com/gallicorpora/application.git
 ```
-2. Move into this repository (go to the dev branch).
+2. Rename and move into this repository.
 ```
-$ cd gallicorpora-demo
+$ mv application/ gallicorpora
+$ cd gallicorpora
 ```
 ---
 ### Set up the Application

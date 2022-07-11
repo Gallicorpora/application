@@ -19,7 +19,7 @@ ___
 - python 3.9
 - bash shell
 ---
-### Download the Application
+### 1. Download the Application
 1. Clone this repository.
 ```
 $ git clone https://github.com/gallicorpora/application.git
@@ -30,7 +30,7 @@ $ mv application/ gallicorpora
 $ cd gallicorpora
 ```
 ---
-### Set up the Application
+### 2. Set up the Application
 3. Install models and dependencies.
 
 There are 2 ways to install the Machine Learning models that this application needs.
@@ -71,7 +71,7 @@ There are 2 ways to install the Machine Learning models that this application ne
 >Note: The prototype currently recognizes which model to apply to a document by parsing the digitized document's IIIF manifest and extracting the first two letters of the first language the manifest ascribes to the document. This means that the prototype does not distinguish between different types of French, such as *moyen français* (frm) and *français moderne* (fra). In both cases, that document's language would be represented in the file name as "fr".
 
 ---
-### Run the Application
+### 3. Run the Application
 4. Run the script `process.sh` with its required parameter `-f`.
 
 - In order to know which documents to download and to transcribe, the application needs to read a text file with a list of each document's Archival Resource Key (ARK). Each ARK should be on a new line in this simple text document, as seen in the following example:

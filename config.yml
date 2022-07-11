@@ -5,7 +5,7 @@
 
 data:
   # specify the relative path of your data files
-  path: "./test_data"
+  path: "./data"
 
 responsibility:
   text: "Transformation from ALTO4 to TEI by"

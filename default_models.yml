@@ -1,0 +1,2 @@
+Default_Segmentation="https://github.com/Heresta/OCR17plus/raw/main/Model/Segment/appenzeller.mlmodel"
+Default_HTR="https://github.com/Heresta/OCR17plus/raw/main/Model/HTR/dentduchat.mlmodel"

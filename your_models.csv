@@ -1,0 +1,4 @@
+language,century,job,url
+fr,17,seg,https://github.com/Heresta/OCR17plus/raw/main/Model/Segment/appenzeller.mlmodel
+fr,17,htr,https://github.com/Heresta/OCR17plus/raw/main/Model/HTR/dentduchat.mlmodel
+end (leave blank)

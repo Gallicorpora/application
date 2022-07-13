@@ -96,7 +96,7 @@ class FullTree:
                     Entry("date","resp",None,"date_resp"),
                     # @key for <country> in <msDesc>, onyl data from SRU
                     Entry("country","key",None,"country"),
-                    # <respository> in <msDesc>, only data from SRU
+                    # <respository> in <msDesc>, only data from IIIF
                     Entry("repository",None,"Repository",None),
                     # <idno> in <msDesc>, data from IIIF or SRU
                     Entry("idno",None,"Shelfmark","idno"),

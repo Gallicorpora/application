@@ -37,6 +37,6 @@ class IIIF:
         if clean_data["Relation"] and re.search(r"\/((?:ark:)\/\w+\/\w+)", clean_data["Relation"]):
             clean_data["Catalogue ARK"]=(re.search(r"\/((?:ark:)\/\w+\/\w+)", clean_data["Relation"]).group(1))
         # Clean author name, getting rid of ". Auteur du texte" at the end of the string
-        if clean_data["Creator"] and re.search(r"(.+)(?:\()", clean_data["Creator"]):
-            clean_data["Creator"]=re.search(r"(.+)(?:\()", clean_data["Creator"]).group(1)
+        if clean_data["Creator"]:
+            clean_data["Creator"]=re.sub(r"(\s\(|\.).+", '', clean_data["Creator"])
         return clean_data

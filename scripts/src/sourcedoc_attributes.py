@@ -97,8 +97,8 @@ class Attributes:
 
                     data.attributes["ulx"]=x
                     data.attributes["uly"]=y
-                    data.attributes["lrx"]=w
-                    data.attributes["lry"]=h
+                    data.attributes["lrx"]=w+x
+                    data.attributes["lry"]=h+y
 
                 # Extract the attributes for the child <Polygon> of each targeted ALTO element and put that dictionary into a list
                 if element.find('.//a:Polygon', namespaces=NS) is not None and element.find('.//a:Polygon', namespaces=NS).attrib["POINTS"] is not None:

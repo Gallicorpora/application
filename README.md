@@ -11,6 +11,7 @@ bash process.sh -f arks.txt -l 10
 
 ## **What It Does**
 ___
+A demonstration of the pipeline can be seen in this [YouTube video](https://www.youtube.com/watch?v=iSpGQuKMvlY).
 The Gallic(orpor)a Application downloads digital images of pages from a document on Gallica, transcribes them with Machine Learning models, and structures that transcribed data into a digital edition that conforms to the TEI (Text Encoding Initiative).
 
 ## **How to Use It**

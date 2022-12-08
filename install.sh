@@ -60,7 +60,7 @@ Help()
 }
 
 #####################################################################
-# Generic Script ot Download Models
+# Generic Script to Download Models
 #####################################################################
 Download()
 {
@@ -263,7 +263,7 @@ Default_Models()
     DEFAULTHTR=$Default_HTR
 
     # Declare the default segmentation model's name in variable 'output'.
-    output=defaultseg.mlmodel
+    output=defaultseg.pt
     # Declare the default segmentation model's URL in variable 'url'.
     url=$DEFAULTSEG
     # With the url and output file variables set, download the model.

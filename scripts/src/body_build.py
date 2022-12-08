@@ -43,11 +43,12 @@ def body(root, data):
                 last_element.append(lb)
             
         # MainZone line
-        elif line.zone_type[:4] == "Main":
+        elif line.zone_type == "MainZone":
             # create an <ab> if one is not already the preceding sibling 
             if last_element.tag != "ab":
                 ab = etree.Element("ab", zone_atts)
                 last_element.addnext(ab)
+                ab.append(lb)
                 # update the last element in div
                 last_element = div[-1]
 
@@ -63,6 +64,6 @@ def body(root, data):
                     ab_children[-1].append(lb)
             
             # if the line is not emphasized, append it to the last element in the <ab>
-            elif line.line_type[:7] == "Default":
+            else:
                 last_element.append(lb)
                 

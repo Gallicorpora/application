@@ -101,7 +101,7 @@ Choose_Model()
 	# If the ideal segmentation model is in the directory './models/', set it as the SEG variable.
 	if [[ -f ./models/${idealseg} ]]
 		then SEG=$idealseg
-	else SEG=defaultseg.mlmodel
+	else SEG=defaultseg.pt
 	fi
 
 	# If the ideal HTR model is in the directory './models/', set it as the HTR variable.
@@ -139,7 +139,10 @@ do
 	# Apply the selected models.
 	cd "img/$ARK"
 	echo -e "The document is being segmented with '${SEG}' and the text is being predicted with '${HTR}'...\n"
-    kraken --alto --suffix ".xml" -I "*.jpg" -f image segment -i "../../models/$SEG" -bl ocr -m "../../models/$HTR"
+	# Segmentation
+	yaltai kraken --device cpu -I "*.jpg" --suffix ".xml" segment --yolo ../../models/$SEG
+	# HTR
+    kraken --alto --suffix ".xml" -I "*.xml" -f alto ocr -m "../../models/$HTR"
 	cd -
 
 	# Move the ALTO XML files to a subdirectory in 'data/' named after the document's ARK.

@@ -1,4 +1,3 @@
 language,century,job,url
-fr,17,seg,https://github.com/Heresta/OCR17plus/raw/main/Model/Segment/appenzeller.mlmodel
-fr,17,htr,https://github.com/Heresta/OCR17plus/raw/main/Model/HTR/dentduchat.mlmodel
+fr,15,htr,https://github.com/Gallicorpora/Segmentation-and-HTR-Models/releases/download/1.0.0/cortado.mlmodel
 end (leave blank)
